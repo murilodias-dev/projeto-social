@@ -67,34 +67,46 @@
             background-size: 100px;
             
             margin-top: 20px;
+        } 
+
+        iframe#tela{
+           position: relative; 
+           top: 50%;
+           left: 50%; 
+           transform: translate(-50%, -50%);
+
+
+           width: 258px;
+           height: 454px;
         }
     </style>
 </head>
 <body> 
     <main>
     <section id="celular">
+        <iframe src="home.html" name="tela" id="tela" frameborder="0"></iframe>
     </section>
 
     <section id="redes-sociais"> 
     <div class="redes" style="background-image: url(Imagens/logo-home.jpg)">
-        <a href="" >a</a>
+        <a href="home.html" target="tela">a</a>
     </div> 
 
 
     <div class="redes" style="background-image: url(Imagens/logo-facebook.jpg)">
-        <a href="" >a</a>
+        <a href="facebook.html" target="tela">a</a>
     </div> 
 
     <div class="redes" style="background-image: url(Imagens/logo-instagram.jpg)">
-        <a href="">a</a>
+        <a href="instagram.html" target="tela">a</a>
     </div> 
 
     <div class="redes" style="background-image: url(Imagens/logo-github.jpg)">
-        <a href="" >a</a>
+        <a href="github.html" target="tela">a</a>
     </div> 
 
     <div class="redes" style="background-image: url(Imagens/logo-twitter.jpg)">
-        <a href="">a</a>
+        <a href="twitter.html" target="tela">a</a>
     </div> 
     </section>
     </main>
