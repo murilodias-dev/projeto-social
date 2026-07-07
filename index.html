@@ -4,14 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Redes Sociais</title> 
-    <style>
+    <style> 
+    @charset "UTF-8";
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html, body{
+        height: 100vh;
+        width: 100vw;
+    } 
+
         body {
             background-color: white;
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url("Imagens/fundo-madeira.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat;
+        } 
+
+        main{
+            position: relative;
+            height: 100vh;
+        }
+
+        section#celular{
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background-image: url("Imagens/frame-iphone.png");
+            background-size: contain;
+            background-repeat: no-repeat; 
+
+            height: 600px;
+            width: 300px;
+           /* Se o Height aumenta 100+ o Width aumenta +50 */
+        }
+
+        section#redes-sociais{
+            position: absolute;
+    
+            height: 400px;
+            width: 90px;
+
+            left: 94.6%;
+            top: 38%; 
+
+        }
+
+        div.redes{ 
+            border-radius: 50%;
+            height: 90px; 
+            width: 90px; 
+
+            background: center no-repeat;
+            background-size: 100px;
+            
+            margin-top: 20px;
         }
     </style>
 </head>
-<body>
+<body> 
+    <main>
+    <section id="celular">
+    </section>
+
+    <section id="redes-sociais"> 
+    <div class="redes" style="background-image: url(Imagens/logo-home.jpg)">
+        <a href="" >a</a>
+    </div> 
+
+
+    <div class="redes" style="background-image: url(Imagens/logo-facebook.jpg)">
+        <a href="" >a</a>
+    </div> 
+
+    <div class="redes" style="background-image: url(Imagens/logo-instagram.jpg)">
+        <a href="">a</a>
+    </div> 
+
+    <div class="redes" style="background-image: url(Imagens/logo-github.jpg)">
+        <a href="" >a</a>
+    </div> 
+
+    <div class="redes" style="background-image: url(Imagens/logo-twitter.jpg)">
+        <a href="">a</a>
+    </div> 
+    </section>
+    </main>
+    
     
 
 
